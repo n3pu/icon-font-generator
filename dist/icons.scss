@@ -1,0 +1,55 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("./icons.ttf?fc57055f4659533161299fab50e4862a") format("truetype"),
+url("./icons.woff?fc57055f4659533161299fab50e4862a") format("woff"),
+url("./icons.woff2?fc57055f4659533161299fab50e4862a") format("woff2");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "chevron-down": "\f101",
+    "chevron-left": "\f102",
+    "chevron-right": "\f103",
+    "chevron-up": "\f104",
+    "facebook": "\f105",
+    "instagram-outlined": "\f106",
+    "phone-call": "\f107",
+    "plus": "\f108",
+);
+
+.icon-chevron-down:before {
+    content: map-get($icons-map, "chevron-down");
+}
+.icon-chevron-left:before {
+    content: map-get($icons-map, "chevron-left");
+}
+.icon-chevron-right:before {
+    content: map-get($icons-map, "chevron-right");
+}
+.icon-chevron-up:before {
+    content: map-get($icons-map, "chevron-up");
+}
+.icon-facebook:before {
+    content: map-get($icons-map, "facebook");
+}
+.icon-instagram-outlined:before {
+    content: map-get($icons-map, "instagram-outlined");
+}
+.icon-phone-call:before {
+    content: map-get($icons-map, "phone-call");
+}
+.icon-plus:before {
+    content: map-get($icons-map, "plus");
+}
