@@ -1,8 +1,8 @@
 @font-face {
     font-family: "icons";
-    src: url("./icons.ttf?fc57055f4659533161299fab50e4862a") format("truetype"),
-url("./icons.woff?fc57055f4659533161299fab50e4862a") format("woff"),
-url("./icons.woff2?fc57055f4659533161299fab50e4862a") format("woff2");
+    src: url("./icons.ttf?7f0756b9de688e7a681f5ca03e27de2f") format("truetype"),
+url("./icons.woff?7f0756b9de688e7a681f5ca03e27de2f") format("woff"),
+url("./icons.woff2?7f0756b9de688e7a681f5ca03e27de2f") format("woff2");
 }
 
 i[class^="icon-"]:before, i[class*=" icon-"]:before {
@@ -39,4 +39,10 @@ i[class^="icon-"]:before, i[class*=" icon-"]:before {
 }
 .icon-plus:before {
     content: "\f108";
+}
+.icon-times:before {
+    content: "\f109";
+}
+.icon-whatsapp-outlined:before {
+    content: "\f10a";
 }
